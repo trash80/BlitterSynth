@@ -178,13 +178,13 @@ public class waveengine extends MaxObject
     {
         switch(shape) {
             case 1:
-                return (phase * (1 + input))%1 > (float) 0.125 ? 1 : 0;
+                return (phase * (1 + input))%1 >= (float) 0.125 ? 1 : 0;
             case 2:
-                return (phase * (1 + input))%1 > (float) 0.25 ? 1 : 0;
+                return (phase * (1 + input))%1 >= (float) 0.25 ? 1 : 0;
             case 3:
-                return (phase * (1 + input))%1 > (float) 0.5 ? 1 : 0;
+                return (phase * (1 + input))%1 >= (float) 0.5 ? 1 : 0;
             case 4:
-                return (phase * (1 + input))%1 > (float) 0.75 ? 1 : 0;
+                return (phase * (1 + input))%1 >= (float) 0.75 ? 1 : 0;
             case 5:
                 return 1 - Math.abs((phase * ((float)1.0001+input) % 1) - (float) 0.5) * 2;
             case 6:
@@ -236,6 +236,7 @@ public class waveengine extends MaxObject
         return (v < min) ? min : (v > max) ? max : v;
     }
 }
+
 
 
 
