@@ -20,7 +20,7 @@ public class waveengine extends MaxObject
     private float lpz;
     private float bpz;
     private int lfsr;
-    private boolean autoRefresh = false;
+	private boolean autoRefresh = false;
 
     private static final String[] INLET_ASSIST = new String[]{
         "inlet 1 help"
@@ -68,29 +68,22 @@ public class waveengine extends MaxObject
         
         for (int iter=0;iter<size;iter++) {
             float phase = ((float) iter) / size;
-            
-            //get raw waveform via math and science
+            //get raw waveform ala eval
             float v = getShape(phase);
             
             //invert 
             if(phase < invert) v = 1 - v;
             
-            //get norm to -0.5 +0.5
-            v = ((v * 2) - 1) / 2;
-            
             //random noise aka lfsr
             if(noise > 0) v = (v * (1 - noise)) + getLfsr();
-            
+
             //amplify
             v *= amp;
             
             //filter
             if(filt_active) {
-                v = getFilter(v);
+                v = getFilter( (v - (float) 0.5) ) + (float) 0.5;
             }
-            
-            //normalize to 0. 1.
-            v = ((v * 2) + 1) / 2;
             
             //wrap
             if(wrap > 0) v = (1000 + v) % 1;
@@ -167,12 +160,12 @@ public class waveengine extends MaxObject
             case 10:
                 res = clip(1 - v,0,1);
                 break;
-            case 11:
-                autoRefresh = true;
-                if(v == 0) autoRefresh = false;
-                break;
+			case 11:
+				autoRefresh = true;
+				if(v == 0) autoRefresh = false;
+				break;
         }
-       if(autoRefresh) bang();
+		if(autoRefresh) bang();
     }
 
     private float getShape(float phase)
@@ -199,7 +192,7 @@ public class waveengine extends MaxObject
     private float getLfsr()
     {
         lfsr = ((lfsr >> 1) | ((((lfsr & 1) ^ ((lfsr & 4) >> 2) ^ ((lfsr & 8) >> 3) ^ ((lfsr & 32) >> 5)) & 1) << 7))&255;
-        return (((float)lfsr / 256) * 2 - 1) * noise;
+        return ((float)lfsr / 256) * noise;
     }
 
     private float getFilter(float v)
@@ -237,6 +230,7 @@ public class waveengine extends MaxObject
         return (v < min) ? min : (v > max) ? max : v;
     }
 }
+
 
 
 
