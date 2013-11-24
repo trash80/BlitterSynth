@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1177.0, 136.0, 266.0, 146.0 ],
+		"rect" : [ 44.0, 70.0, 1322.0, 648.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -51,11 +51,11 @@
 						"Envelope Sync Time[1]" : [ 9.0 ],
 						"Envelope Time[1]" : [ 1000.0 ],
 						"Envelope Trigger[1]" : [ 0.0 ],
-						"function" : [ 1000.0, 0.0, 0.8, 0.0, 0.0, 0, 0.0, 0.5, 0.826772, 0, 0.0, 262.619049, 0.722611, 2, 0.0, 450.88623, 0.0, 2, 0.0, "curve" ]
+						"function" : [ 1000.0, 0.0, 0.8, 0.0, 0.0, 0, 0.0, 0.0, 0.826772, 0, 0.0, 261.904785, 0.722611, 2, 0.0, 449.735474, 0.0, 2, 0.0, "curve" ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u934005544"
+					"varname" : "u217000615"
 				}
 
 			}
@@ -68,8 +68,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.0, 414.0, 107.0, 18.0 ],
-					"text" : "if $f1 != 0 then $f1"
+					"patching_rect" : [ 123.0, 421.0, 92.0, 18.0 ],
+					"text" : "if $f1 > 0 then $f1"
 				}
 
 			}
@@ -80,7 +80,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 458.0, 941.0, 25.0, 25.0 ]
+					"patching_rect" : [ 456.0, 941.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -91,12 +91,12 @@
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-12",
-					"linecount" : 8,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.0, 81.0, 186.0, 96.0 ],
-					"text" : "Taken and modified from the Max for Live Max MIDI Effect Library. Made Inlet for MIDI Input and Value Outlet to allow Monophonic Triggering behavior. Note: Could not find any license information- Though uwave is free- I assume this is copyrighted by Ableton. <3",
+					"patching_rect" : [ 27.0, 81.0, 186.0, 29.0 ],
+					"text" : "Taken and modified from the Max for Live Max MIDI Effect Library. ",
 					"textcolor" : [ 0.965328, 0.0, 0.056831, 1.0 ]
 				}
 
@@ -109,7 +109,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.5, 360.5, 25.0, 25.0 ]
+					"patching_rect" : [ 123.0, 352.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -182,21 +182,6 @@
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 279.0, 600.0, 32.5, 18.0 ],
 					"text" : "t b l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-94",
-					"linecount" : 10,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 833.25, 840.5, 49.0, 49.0 ],
-					"text" : "0. 0. 0. 0.5 0.897638 0. 190.234344 0.735074 0. 297.993164 0. 0."
 				}
 
 			}
@@ -322,7 +307,7 @@
 					"presentation_rect" : [ 20.712402, 66.537933, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope KeySustain[1]",
+							"parameter_longname" : "Envelope KeySustain[3]",
 							"parameter_shortname" : "Sustain",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -383,34 +368,6 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"id" : "obj-130",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 337.0, 121.0, 57.0, 18.0 ],
-					"text" : "r ---Decay"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-126",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.25, 121.0, 58.0, 18.0 ],
-					"text" : "r ---Attack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
 					"id" : "obj-106",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -457,7 +414,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Envelope Decay Slope[1]",
+							"parameter_longname" : "Envelope Decay Slope[3]",
 							"parameter_shortname" : "DSlope",
 							"parameter_type" : 0,
 							"parameter_mmin" : -1.0,
@@ -498,7 +455,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Envelope Attack Slope[1]",
+							"parameter_longname" : "Envelope Attack Slope[3]",
 							"parameter_shortname" : "ASlope",
 							"parameter_type" : 0,
 							"parameter_mmin" : -1.0,
@@ -1056,7 +1013,7 @@
 					"presentation_rect" : [ 21.712402, 121.0, 50.113159, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Sync Time[1]",
+							"parameter_longname" : "Envelope Sync Time[3]",
 							"parameter_shortname" : "SyncTime",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "1/48", "1/32", "1/24", "1/16", "1/12", "1/8", "1/6", "1/4", "1/3", "1/2", "1", "2", "3", "4", "6", "8" ],
@@ -1093,7 +1050,7 @@
 					"presentation_rect" : [ 21.712402, 104.537933, 50.400757, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Trigger[1]",
+							"parameter_longname" : "Envelope Trigger[3]",
 							"parameter_shortname" : "Trigger Chooser",
 							"parameter_type" : 2,
 							"parameter_enum" : [ "Trigger", "Sync", "Loop" ],
@@ -1472,35 +1429,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.0, 0.380392, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-95",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1008.0, 414.0, 92.0, 18.0 ],
-					"text" : "receive ---Trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 1.0, 0.0, 0.380392, 1.0 ],
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-91",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 312.0, 765.0, 81.0, 18.0 ],
-					"text" : "send ---Trigger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"activebgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
@@ -1521,7 +1449,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Envelope Time[1]",
+							"parameter_longname" : "Envelope Time[3]",
 							"parameter_shortname" : "EnvTime",
 							"parameter_type" : 0,
 							"parameter_mmin" : 100.0,
@@ -1625,7 +1553,7 @@
 					"patching_rect" : [ 198.5, 617.0, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.toggle[1]",
+							"parameter_longname" : "live.toggle[3]",
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -1897,7 +1825,7 @@
 						"valueof" : 						{
 							"parameter_order" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Enable[2]",
+							"parameter_longname" : "Enable[4]",
 							"parameter_shortname" : "Enable",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -2001,7 +1929,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 448.5, 227.0, 50.0, 18.0 ],
-									"text" : "2n"
+									"text" : "4nt"
 								}
 
 							}
@@ -2967,7 +2895,7 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_linknames" : 1,
-											"parameter_longname" : "Cycle[2]",
+											"parameter_longname" : "Cycle[4]",
 											"parameter_shortname" : "Cycle",
 											"parameter_type" : 1,
 											"parameter_mmin" : 1.0,
@@ -4319,7 +4247,7 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_linknames" : 1,
-											"parameter_longname" : "Offset[2]",
+											"parameter_longname" : "Offset[4]",
 											"parameter_shortname" : "Offset",
 											"parameter_type" : 2,
 											"parameter_enum" : [ "None", "1/128", "1/64", "1/32T", "1/64D", "1/32", "1/16T", "1/32D", "1/16", "1/8T", "1/16D", "1/8", "1/4T", "1/8D", "1/4", "1/2T", "1/4D", "1/2", "1/1T", "1/2D", "1/1", "1/1D" ],
@@ -4627,8 +4555,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 511.583313, 857.0, 69.0, 18.0 ],
-					"text" : "snapshot~ 1"
+					"patching_rect" : [ 496.666656, 857.0, 69.0, 18.0 ],
+					"text" : "snapshot~ 2"
 				}
 
 			}
@@ -4651,7 +4579,7 @@
 					"presentation_rect" : [ 23.0, 11.037933, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Amount[1]",
+							"parameter_longname" : "Envelope Amount[3]",
 							"parameter_shortname" : "Amount",
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -4685,7 +4613,7 @@
 					"presentation_rect" : [ 170.0, 72.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Sustain[1]",
+							"parameter_longname" : "Envelope Sustain[3]",
 							"parameter_shortname" : "Sustain",
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -4719,7 +4647,7 @@
 					"presentation_rect" : [ 76.25, 72.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Attack[1]",
+							"parameter_longname" : "Envelope Attack[3]",
 							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -4751,7 +4679,7 @@
 					"presentation_rect" : [ 219.25, 72.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Envelope Release[1]",
+							"parameter_longname" : "Envelope Release[3]",
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -4786,7 +4714,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Envelope Decay[1]",
+							"parameter_longname" : "Envelope Decay[3]",
 							"parameter_shortname" : "Decay",
 							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
@@ -4823,7 +4751,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Envelope Release Slope[1]",
+							"parameter_longname" : "Envelope Release Slope[3]",
 							"parameter_shortname" : "Slope",
 							"parameter_type" : 0,
 							"parameter_mmin" : -1.0,
@@ -4861,7 +4789,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 496.666656, 810.0, 46.0, 18.0 ],
+					"patching_rect" : [ 456.0, 824.5, 46.0, 18.0 ],
 					"text" : "curve~"
 				}
 
@@ -5209,7 +5137,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 0.5, 0.826772, 0, 0.0, 262.619049, 0.722611, 2, 0.0, 450.88623, 0.0, 2, 0.0 ],
+					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 0.0, 0.826772, 0, 0.0, 261.904785, 0.722611, 2, 0.0, 449.735474, 0.0, 2, 0.0 ],
 					"bgcolor" : [ 0.073934, 0.089056, 0.104737, 1.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"clickadd" : 0,
@@ -5490,28 +5418,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-126", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-130", 0 ]
 				}
 
 			}
@@ -5544,7 +5454,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
+					"destination" : [ "obj-100", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
@@ -5553,7 +5463,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
+					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
@@ -6085,15 +5995,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-94", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-50", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 5 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -6386,15 +6287,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-93", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-100", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-95", 0 ]
 				}
 
 			}
