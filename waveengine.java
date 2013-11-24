@@ -20,7 +20,7 @@ public class waveengine extends MaxObject
     private float lpz;
     private float bpz;
     private int lfsr;
-	private boolean autoRefresh = false;
+    private boolean autoRefresh = false;
 
     private static final String[] INLET_ASSIST = new String[]{
         "inlet 1 help"
@@ -68,7 +68,8 @@ public class waveengine extends MaxObject
         
         for (int iter=0;iter<size;iter++) {
             float phase = ((float) iter) / size;
-            //get raw waveform ala eval
+            
+            //get raw waveform via math and science
             float v = getShape(phase);
             
             //invert 
@@ -166,12 +167,12 @@ public class waveengine extends MaxObject
             case 10:
                 res = clip(1 - v,0,1);
                 break;
-			case 11:
-				autoRefresh = true;
-				if(v == 0) autoRefresh = false;
-				break;
+            case 11:
+                autoRefresh = true;
+                if(v == 0) autoRefresh = false;
+                break;
         }
-		if(autoRefresh) bang();
+       if(autoRefresh) bang();
     }
 
     private float getShape(float phase)
