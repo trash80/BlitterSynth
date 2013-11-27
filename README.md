@@ -12,7 +12,7 @@ Changelog
  - Fixed DC offset issue wiht bit depth.
  - Rewrote playback oscillator into Gen~ , double buffered for interpolated waveform shape transitions.
  - Changed order of parameters in Push for easier control.
- - Scaled h.sync and scale better.
+ - Scaled knobs for "h.sync" and "scale" for easier fine control.
  - Fixed waveform had dc offset at low bit depths.
  - Fixed feedback loop when mapping envelope to itself.
  - Fixed Framesync was triggering waveform generator before mod envelopes engaged.
