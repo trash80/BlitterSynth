@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 82.0, 1068.0, 564.0 ],
+		"rect" : [ 533.0, 44.0, 1068.0, 564.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -102,7 +102,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 103.985962, 178.75, 50.0, 16.0 ],
-									"text" : "2."
+									"text" : "1."
 								}
 
 							}
@@ -983,7 +983,6 @@
 					"name" : "envelopes.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 4,
-					"offset" : [ -266.0, 0.0 ],
 					"outlettype" : [ "signal", "float", "float", "float" ],
 					"patching_rect" : [ 849.392944, 92.0, 267.0, 145.0 ],
 					"presentation" : 1,
@@ -6856,7 +6855,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 114.0, 44.0, 640.0, 636.0 ],
+						"rect" : [ 18.0, 142.0, 640.0, 636.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -6876,6 +6875,17 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"bufsize" : 32,
+									"id" : "obj-26",
+									"maxclass" : "scope~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 395.0, 455.0, 130.0, 130.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
@@ -6927,7 +6937,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 316.0, 377.0, 66.0, 18.0 ],
-									"text" : "expr 0.5/$f1"
+									"text" : "expr .25/$f1"
 								}
 
 							}
@@ -7499,6 +7509,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-111", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
@@ -11459,7 +11478,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
