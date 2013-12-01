@@ -109,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 239.0, 56.0, 265.0, 29.0 ],
+					"patching_rect" : [ 278.0, 56.0, 265.0, 29.0 ],
 					"text" : "divide by the height of the window for drawing display. (multislider line thinkness)"
 				}
 
@@ -134,11 +134,11 @@
 					"fontsize" : 10.0,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 198.0, 56.0, 41.0, 18.0 ],
-					"text" : "!/ 128"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 198.0, 56.0, 77.0, 18.0 ],
+					"text" : "expr 128.0/$f1"
 				}
 
 			}
@@ -182,20 +182,6 @@
 					"slidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"thickness" : 8,
 					"varname" : "multislider[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.063658, 0.063792, 0.07524, 1.0 ],
-					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"id" : "obj-9",
-					"maxclass" : "panel",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 123.875, 402.0, 203.0, 71.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 262.0, 129.0 ]
 				}
 
 			}
@@ -332,7 +318,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }

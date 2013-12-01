@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 257.0, 96.0, 406.0, 228.0 ],
+		"rect" : [ 278.0, 44.0, 912.0, 622.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -31,11 +31,11 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-25",
+					"id" : "obj-26",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 846.0, 563.0, 25.0, 25.0 ]
+					"patching_rect" : [ 473.0, 563.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -44,9 +44,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-4",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -55,18 +56,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 435.0, 443.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 130.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 117.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[7]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -79,8 +80,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-16",
 					"maxclass" : "live.menu",
@@ -90,16 +92,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 323.0, 443.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 130.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 117.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[7]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -113,8 +116,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-17",
 					"maxclass" : "live.menu",
@@ -124,7 +128,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 246.0, 443.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 130.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 117.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[7]",
@@ -133,7 +137,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -149,9 +154,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-18",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -160,18 +166,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 400.0, 443.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 130.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 117.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[7]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -186,9 +192,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-19",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -197,18 +204,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 435.0, 406.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 114.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 101.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[8]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -221,8 +228,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "live.menu",
@@ -232,16 +240,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 323.0, 406.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 114.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 101.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[8]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -255,8 +264,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-22",
 					"maxclass" : "live.menu",
@@ -266,7 +276,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 246.0, 406.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 114.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 101.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[8]",
@@ -275,7 +285,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -291,9 +302,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-23",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -302,18 +314,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 400.0, 406.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 114.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 101.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[8]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -335,7 +347,7 @@
 					"patching_rect" : [ 296.0, 127.0, 59.5, 18.0 ],
 					"restore" : 					{
 						"moddest[1]" : [ 1.0 ],
-						"moddest[2]" : [ 2.0 ],
+						"moddest[2]" : [ 3.0 ],
 						"moddest[3]" : [ 0.0 ],
 						"moddest[4]" : [ 0.0 ],
 						"moddest[5]" : [ 0.0 ],
@@ -350,14 +362,14 @@
 						"modinput[6]" : [ 0.0 ],
 						"modinput[7]" : [ 0.0 ],
 						"modinput[8]" : [ 0.0 ],
-						"modmax[1]" : [ 1.0 ],
+						"modmax[1]" : [ 127.0 ],
 						"modmax[2]" : [ 2.0 ],
-						"modmax[3]" : [ 1.0 ],
-						"modmax[4]" : [ 1.0 ],
-						"modmax[5]" : [ 1.0 ],
-						"modmax[6]" : [ 1.0 ],
-						"modmax[7]" : [ 1.0 ],
-						"modmax[8]" : [ 1.0 ],
+						"modmax[3]" : [ 127.0 ],
+						"modmax[4]" : [ 127.0 ],
+						"modmax[5]" : [ 127.0 ],
+						"modmax[6]" : [ 127.0 ],
+						"modmax[7]" : [ 127.0 ],
+						"modmax[8]" : [ 127.0 ],
 						"modmin[1]" : [ 0.0 ],
 						"modmin[2]" : [ -2.0 ],
 						"modmin[3]" : [ 0.0 ],
@@ -369,7 +381,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u452002322"
+					"varname" : "u113013929"
 				}
 
 			}
@@ -380,255 +392,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 896.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-5",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 795.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-6",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 746.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-7",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 695.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-12",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 645.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-13",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 596.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-129",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 598.0, 425.0, 71.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 193.0, 1.5, 42.0, 18.0 ],
-					"text" : "Max",
-					"textcolor" : [ 0.72549, 0.733333, 0.756863, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-128",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 583.0, 410.0, 71.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 1.5, 42.0, 18.0 ],
-					"text" : "Min",
-					"textcolor" : [ 0.72549, 0.733333, 0.756863, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-127",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 568.0, 395.0, 71.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 73.0, 1.5, 70.0, 18.0 ],
-					"text" : "Destination",
-					"textcolor" : [ 0.72549, 0.733333, 0.756863, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-126",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 553.0, 380.0, 71.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 1.5, 45.0, 18.0 ],
-					"text" : "Source",
-					"textcolor" : [ 0.72549, 0.733333, 0.756863, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-122",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 545.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-123",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 495.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-124",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 446.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-118",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 395.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-119",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 345.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-120",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-121",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 246.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-116",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 195.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-117",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 145.5, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-115",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 96.0, 563.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-114",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 563.0, 25.0, 25.0 ]
+					"patching_rect" : [ 579.5, 563.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -638,12 +402,12 @@
 					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-113",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 412.0, 47.0, 158.0, 62.0 ],
-					"text" : "yeah, what a craptacular way to do it. i know there is probably a better method, but I couldnt think of one that was any better. @TODO: REDO"
+					"patching_rect" : [ 401.0, 38.0, 164.0, 51.0 ],
+					"text" : "yeah, what a craptacular way to do it. i know there is probably a better method, but I couldnt think of one. @TODO: REDO"
 				}
 
 			}
@@ -772,7 +536,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 190.0, 38.0, 25.0, 25.0 ]
 				}
 
@@ -798,7 +562,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 147.5, 38.0, 25.0, 25.0 ]
 				}
 
@@ -824,7 +588,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 108.5, 38.0, 25.0, 25.0 ]
 				}
 
@@ -850,7 +614,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 71.0, 38.0, 25.0, 25.0 ]
 				}
 
@@ -860,7 +624,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-81",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -902,7 +665,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 164.0, 71.0, 20.0 ],
+									"patching_rect" : [ 65.0, 164.0, 71.0, 18.0 ],
 									"text" : "append \\$1"
 								}
 
@@ -916,7 +679,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 208.0, 34.0, 18.0 ],
+									"patching_rect" : [ 50.0, 208.0, 34.0, 16.0 ],
 									"text" : "0 $1"
 								}
 
@@ -930,7 +693,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 98.0, 92.0, 20.0 ],
+									"patching_rect" : [ 50.0, 98.0, 92.0, 18.0 ],
 									"text" : "scale 0. 1. 0. 1."
 								}
 
@@ -1062,7 +825,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 443.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 443.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1085,7 +848,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-86",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -1287,7 +1049,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 406.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 406.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1310,7 +1072,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-66",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -1512,7 +1273,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 371.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 371.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1535,9 +1296,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-67",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1546,18 +1308,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 372.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 98.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 85.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[4]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -1570,8 +1332,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-68",
 					"maxclass" : "live.menu",
@@ -1581,16 +1344,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 372.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 98.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 85.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[4]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -1604,8 +1368,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-69",
 					"maxclass" : "live.menu",
@@ -1615,7 +1380,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 372.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 98.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 85.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[4]",
@@ -1624,7 +1389,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -1640,9 +1406,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-70",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1651,18 +1418,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 372.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 98.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 85.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[4]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -1677,7 +1444,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-71",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -1879,7 +1645,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 334.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 334.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -1902,9 +1668,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-72",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -1913,18 +1680,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 335.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 82.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 69.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[5]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -1937,8 +1704,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-73",
 					"maxclass" : "live.menu",
@@ -1948,16 +1716,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 335.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 82.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 69.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[5]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -1971,8 +1740,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-74",
 					"maxclass" : "live.menu",
@@ -1982,7 +1752,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 335.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 82.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 69.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[5]",
@@ -1991,7 +1761,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -2007,9 +1778,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-75",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2018,18 +1790,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 335.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 82.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 69.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[5]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -2044,7 +1816,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-76",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -2246,7 +2017,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 298.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 298.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -2269,9 +2040,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-77",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2280,18 +2052,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 299.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 66.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 53.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[6]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -2304,8 +2076,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-78",
 					"maxclass" : "live.menu",
@@ -2315,16 +2088,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 299.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 66.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 53.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[6]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -2338,8 +2112,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-79",
 					"maxclass" : "live.menu",
@@ -2349,7 +2124,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 299.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 66.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 53.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[6]",
@@ -2358,7 +2133,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -2374,9 +2150,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-80",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2385,18 +2162,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 299.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 66.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 53.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[6]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -2411,7 +2188,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-61",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -2613,7 +2389,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 268.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 268.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -2636,9 +2412,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-62",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2647,18 +2424,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 269.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 50.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 37.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[3]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -2671,8 +2448,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-63",
 					"maxclass" : "live.menu",
@@ -2682,16 +2460,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 269.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 50.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 37.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[3]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -2705,8 +2484,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-64",
 					"maxclass" : "live.menu",
@@ -2716,7 +2496,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 269.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 50.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 37.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[3]",
@@ -2725,7 +2505,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -2741,9 +2522,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-65",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -2752,18 +2534,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 269.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 50.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 37.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[3]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -2778,7 +2560,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-56",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -2820,7 +2601,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 164.0, 71.0, 20.0 ],
+									"patching_rect" : [ 65.0, 164.0, 71.0, 18.0 ],
 									"text" : "append \\$1"
 								}
 
@@ -2834,8 +2615,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 208.0, 34.0, 18.0 ],
-									"text" : "2 $1"
+									"patching_rect" : [ 50.0, 208.0, 34.0, 16.0 ],
+									"text" : "3 $1"
 								}
 
 							}
@@ -2848,7 +2629,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 98.0, 92.0, 20.0 ],
+									"patching_rect" : [ 50.0, 98.0, 92.0, 18.0 ],
 									"text" : "scale 0. 1. 0. 1."
 								}
 
@@ -2980,7 +2761,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 231.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 231.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -3003,9 +2784,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-57",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -3014,18 +2796,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 232.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 34.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 21.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[2]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -3038,8 +2820,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-58",
 					"maxclass" : "live.menu",
@@ -3049,16 +2832,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 232.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 34.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 21.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[2]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 2 ],
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 3 ],
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -3072,8 +2856,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-59",
 					"maxclass" : "live.menu",
@@ -3083,7 +2868,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 232.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 34.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 21.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[2]",
@@ -3092,7 +2877,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 3 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -3108,9 +2894,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-60",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -3119,18 +2906,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 232.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 34.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 21.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[2]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ -2 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -3145,7 +2932,6 @@
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
 					"id" : "obj-50",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -3346,7 +3132,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 195.5, 63.0, 29.0 ],
+					"patching_rect" : [ 473.0, 195.5, 97.5, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -3373,22 +3159,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.5, 500.0, 32.5, 16.0 ],
+					"patching_rect" : [ 579.5, 500.0, 32.5, 16.0 ],
 					"text" : "0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 10.0,
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 18,
-					"numoutlets" : 18,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 46.0, 480.0, 869.0, 18.0 ],
-					"text" : "route 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17"
 				}
 
 			}
@@ -3397,9 +3169,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the maximum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-11",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -3408,18 +3181,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 436.0, 196.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0, 18.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 208.0, 5.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmax[1]",
 							"parameter_shortname" : "modmax[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_initial" : [ 127 ],
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Maximum modulation amount"
 						}
 
 					}
@@ -3432,8 +3205,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a parameter to apply the modulation to.",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-10",
 					"maxclass" : "live.menu",
@@ -3443,16 +3217,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 324.0, 196.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 18.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 86.0, 5.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "moddest[1]",
 							"parameter_shortname" : "moddest[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Scale", "Env 1", "Env 2", "Env 3" ],
+							"parameter_enum" : [ "Off", "Volume", "Tune", "Fine", "Shape", "Multiply", "Amp", "Flip", "Noise", "Cutoff", "Res", "H.Sync", "Size", "Bits", "Env1 Amt", "Env2 Amt", "Env3 Amt", "Env1 Time", "Env2 Time", "Env3 Time" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 1 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation destination"
 						}
 
 					}
@@ -3466,8 +3241,9 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.127208, 0.135032, 0.143976, 0.0 ],
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"annotation" : "Select a modulation source. ",
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"hltcolor" : [ 0.32549, 0.34902, 0.380392, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "live.menu",
@@ -3477,7 +3253,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 247.0, 196.5, 78.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 18.5, 69.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 5.5, 77.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modinput[1]",
@@ -3486,7 +3262,8 @@
 							"parameter_enum" : [ "Off", "Velocity", "Mod Wheel", "PB Wheel", "Keyboard", "Aftertouch", "Env 1", "Env 2", "Env 3" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 1 ],
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Modulation matrix source"
 						}
 
 					}
@@ -3502,9 +3279,10 @@
 					"activebgcolor" : [ 0.72549, 0.733333, 0.756863, 0.0 ],
 					"activeslidercolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activetricolor2" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"annotation" : "Set the minimum amount applied to the selected parameter.",
 					"appearance" : 1,
-					"bordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
-					"focusbordercolor" : [ 0.509594, 0.514203, 0.528032, 1.0 ],
+					"bordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
+					"focusbordercolor" : [ 0.72549, 0.733333, 0.756863, 0.29 ],
 					"id" : "obj-8",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
@@ -3513,18 +3291,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 196.5, 36.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 18.5, 42.0, 15.0 ],
+					"presentation_rect" : [ 165.0, 5.5, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "modmin[1]",
 							"parameter_shortname" : "modmin[1]",
 							"parameter_type" : 0,
-							"parameter_mmin" : -100.0,
-							"parameter_mmax" : 100.0,
+							"parameter_mmin" : -127.0,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 1,
-							"parameter_invisible" : 1
+							"parameter_unitstyle" : 0,
+							"parameter_invisible" : 1,
+							"parameter_annotation_name" : "Minimum modulation amount"
 						}
 
 					}
@@ -3589,7 +3367,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 232.0, 23.0, 232.0 ],
+					"midpoints" : [ 333.5, 232.0, 589.0, 232.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -3680,7 +3458,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 332.5, 469.0, 23.0, 469.0 ],
+					"midpoints" : [ 332.5, 469.0, 589.0, 469.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -3736,7 +3514,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 332.5, 433.0, 23.0, 433.0 ],
+					"midpoints" : [ 332.5, 433.0, 589.0, 433.0 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -3747,159 +3525,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-114", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-115", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-116", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-117", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 7 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-119", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 12 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-120", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-121", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-122", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 10 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-123", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 9 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-124", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 8 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 11 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 16 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 15 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 14 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 13 ]
 				}
 
 			}
@@ -4022,20 +3647,18 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 222.0, 55.5, 222.0 ],
 					"source" : [ "obj-50", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 261.0, 55.5, 261.0 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -4054,7 +3677,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 259.0, 23.0, 259.0 ],
+					"midpoints" : [ 333.5, 259.0, 589.0, 259.0 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -4089,10 +3712,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 292.0, 55.5, 292.0 ],
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -4111,7 +3733,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 294.0, 23.0, 294.0 ],
+					"midpoints" : [ 333.5, 294.0, 589.0, 294.0 ],
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -4146,10 +3768,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 399.0, 55.5, 399.0 ],
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -4168,7 +3789,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 398.0, 23.0, 398.0 ],
+					"midpoints" : [ 333.5, 398.0, 589.0, 398.0 ],
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -4203,10 +3824,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 364.0, 55.5, 364.0 ],
 					"source" : [ "obj-71", 0 ]
 				}
 
@@ -4225,7 +3845,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 361.0, 23.0, 361.0 ],
+					"midpoints" : [ 333.5, 361.0, 589.0, 361.0 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
@@ -4260,10 +3880,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 323.0, 55.5, 323.0 ],
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -4282,7 +3901,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 333.5, 325.0, 23.0, 325.0 ],
+					"midpoints" : [ 333.5, 325.0, 589.0, 325.0 ],
 					"source" : [ "obj-78", 0 ]
 				}
 
@@ -4326,20 +3945,18 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 473.0, 55.5, 473.0 ],
 					"source" : [ "obj-81", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 482.5, 436.0, 55.5, 436.0 ],
 					"source" : [ "obj-86", 0 ]
 				}
 
@@ -4435,7 +4052,43 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-80" : [ "modmin[6]", "modmin[1]", 0 ],
+			"obj-64" : [ "modinput[3]", "modinput[1]", 0 ],
+			"obj-22" : [ "modinput[8]", "modinput[1]", 0 ],
+			"obj-63" : [ "moddest[3]", "moddest[1]", 0 ],
+			"obj-72" : [ "modmax[5]", "modmax[1]", 0 ],
+			"obj-20" : [ "moddest[8]", "moddest[1]", 0 ],
+			"obj-60" : [ "modmin[2]", "modmin[1]", 0 ],
+			"obj-18" : [ "modmin[7]", "modmin[1]", 0 ],
+			"obj-69" : [ "modinput[4]", "modinput[1]", 0 ],
+			"obj-68" : [ "moddest[4]", "moddest[1]", 0 ],
+			"obj-11" : [ "modmax[1]", "modmax[1]", 0 ],
+			"obj-9" : [ "modinput[1]", "modinput[1]", 0 ],
+			"obj-77" : [ "modmax[6]", "modmax[1]", 0 ],
+			"obj-65" : [ "modmin[3]", "modmin[1]", 0 ],
+			"obj-23" : [ "modmin[8]", "modmin[1]", 0 ],
+			"obj-74" : [ "modinput[5]", "modinput[1]", 0 ],
+			"obj-57" : [ "modmax[2]", "modmax[1]", 0 ],
+			"obj-73" : [ "moddest[5]", "moddest[1]", 0 ],
+			"obj-4" : [ "modmax[7]", "modmax[1]", 0 ],
+			"obj-70" : [ "modmin[4]", "modmin[1]", 0 ],
+			"obj-79" : [ "modinput[6]", "modinput[1]", 0 ],
+			"obj-10" : [ "moddest[1]", "moddest[1]", 0 ],
+			"obj-62" : [ "modmax[3]", "modmax[1]", 0 ],
+			"obj-78" : [ "moddest[6]", "moddest[1]", 0 ],
+			"obj-19" : [ "modmax[8]", "modmax[1]", 0 ],
+			"obj-75" : [ "modmin[5]", "modmin[1]", 0 ],
+			"obj-59" : [ "modinput[2]", "modinput[1]", 0 ],
+			"obj-17" : [ "modinput[7]", "modinput[1]", 0 ],
+			"obj-58" : [ "moddest[2]", "moddest[1]", 0 ],
+			"obj-67" : [ "modmax[4]", "modmax[1]", 0 ],
+			"obj-16" : [ "moddest[7]", "moddest[1]", 0 ],
+			"obj-8" : [ "modmin[1]", "modmin[1]", 0 ]
+		}
+,
+		"dependency_cache" : [  ]
 	}
 
 }
