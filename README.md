@@ -8,6 +8,19 @@ Note: If you want to try it out, all you need is the BlitterSynthLivePack.alp fi
 Changelog
 =================
 
+1/12/2013
+ - Fixed feedback loop on matrix.
+ - Fixed minor dc offset issue. 
+ - Renamed "Scale" to "Multiply".
+ - Better control of parameters: Glide & Multiply.
+ - All parameter values are now scaled 0 to 127 as oppose to 0 to 1.
+ - Shape knob is removed in replace of a button selector (for better control for hardware units like Push)
+ - Envelopes rewritten from scratch- Allows the ability to double as LFOs by the use of bipolar mode.
+ - for the entire envelope not just each stage- better for syncing to set.
+ - Added "envelope time" destination to mod matrix.
+ - New cleaner and smaller interface.
+ - All parameters now have annotation for Ableton's help "Info View" panel.
+
 27/11/2013
  - Fixed DC offset issue wiht bit depth.
  - Rewrote playback oscillator into Gen~ , double buffered for interpolated waveform shape transitions.
