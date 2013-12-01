@@ -15,8 +15,7 @@ Changelog
  - Better control of parameters: Glide & Multiply.
  - All parameter values are now scaled 0 to 127 as oppose to 0 to 1.
  - Shape knob is removed in replace of a button selector (for better control for hardware units like Push)
- - Envelopes rewritten from scratch- Allows the ability to double as LFOs by the use of bipolar mode.
- - for the entire envelope not just each stage- better for syncing to set.
+ - Envelopes rewritten from scratch- Allows the ability to double as LFOs by the use of bipolar mode and timing changes.
  - Added "envelope time" destination to mod matrix.
  - New cleaner and smaller interface.
  - All parameters now have annotation for Ableton's help "Info View" panel.
