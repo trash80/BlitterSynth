@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 102.0, 44.0, 1158.0, 668.0 ],
+		"rect" : [ 87.0, 44.0, 1158.0, 668.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,199 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 5,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 85.779053, 119.0, 18.0 ],
+									"text" : "if $i1 == 7 then 0 else 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-38",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 122.779053, 53.0, 16.0 ],
+									"text" : "active $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-42",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-43",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 169.558105, 25.0, 25.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 154.106583, 63.5, 74.0, 18.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p active-state"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"patching_rect" : [ 480.75, 595.0, 125.0, 18.0 ],
+					"text" : "buffer~ ---userwave 20 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "float" ],
+					"patching_rect" : [ 351.601807, 555.0, 73.0, 20.0 ],
+					"text" : "unpack 1 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "list" ],
+					"patching_rect" : [ 351.601807, 523.0, 58.0, 20.0 ],
+					"text" : "listfunnel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 351.601807, 595.0, 127.0, 19.0 ],
+					"text" : "peek~ ---userwave"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
@@ -782,7 +975,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 973.392944, 263.064209, 143.0, 18.0 ],
+					"patching_rect" : [ 1014.726257, 253.814209, 101.666687, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -939,8 +1132,8 @@
 					"fontname" : "Arial Bold",
 					"id" : "obj-28",
 					"maxclass" : "live.tab",
-					"num_lines_patching" : 7,
-					"num_lines_presentation" : 7,
+					"num_lines_patching" : 8,
+					"num_lines_presentation" : 8,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
@@ -953,7 +1146,7 @@
 							"parameter_longname" : "Shape",
 							"parameter_shortname" : "Shape",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "PU1", "PU2", "PU3", "PU4", "TRI", "SAW", "SIN" ],
+							"parameter_enum" : [ "PU1", "PU2", "PU3", "PU4", "TRI", "SAW", "SIN", "USR" ],
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 4 ],
 							"parameter_unitstyle" : 0,
@@ -1023,9 +1216,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "envelopes.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"offset" : [ -266.0, 0.0 ],
-					"outlettype" : [ "signal", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "", "" ],
 					"patching_rect" : [ 849.392944, 89.314209, 267.0, 148.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 529.25, 22.0, 267.0, 144.25 ],
@@ -1107,7 +1299,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 103.985962, 178.75, 50.0, 16.0 ],
-									"text" : "4."
+									"text" : "12."
 								}
 
 							}
@@ -1618,7 +1810,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "/*\r\n ____                                          ____                     \n|    ~.    |        | `````|````` `````|````` |            |`````````,  \r\n-----------------------------------------------------------------------\n|       ~. |        |      |           |      |            |    `.      \n|_______.' |_______ |      |           |      |___________ |      `.    \n                                                                        \n                                                                        \n            ..'''' ``..     ..'' |..          | `````|````` |         | \r\n-----------------------------------------------------------------------\n      ..'                |       |      ``..  |      |      |         | \n....''                   |       |          ``|      |      |         |\r\n\r\n                                                                     \n   _/                                    _/          _/_/      _/    \n_/_/_/_/  _/  _/_/    _/_/_/    _/_/_/  _/_/_/    _/    _/  _/  _/   \n _/      _/_/      _/    _/  _/_/      _/    _/    _/_/    _/  _/    \n_/      _/        _/    _/      _/_/  _/    _/  _/    _/  _/  _/     \n _/_/  _/          _/_/_/  _/_/_/    _/    _/    _/_/      _/       \r\n\r\n\r\nWaveform Generator\r\n\r\nCC - Timothy Lamb - trash80.com\r\n\r\n*/\r\nBuffer wavetable(\"---wavram\");\r\nBuffer wavetabledisplay(\"---wavdisplayram\");\r\n\nHistory index(0);\nHistory sync_index(0);\nHistory sync_render(0);\r\n\nHistory current_shape(0);\nHistory bpz(0.0001);\nHistory lpz(0.0001);\n\nsize  = in1;\nbits  = in2;\nshape = in3;\nmult  = in4;\nwrap  = in5;\namp   = in6;\nflip  = in7;\nnoi   = in8;\nfilter = in9;\ncutoff = in10;\nres   = in11;\n\nfsync_enable = in12;\nfsync_rate   = in13;\nfsync_reset  = in14;\n\n\n// Framesync Oscillator\nif(fsync_enable != 0) { \n    sync_period = fsync_rate * (SAMPLERATE / 1000);\n    sync_phase  = sync_index / sync_period;\n    sync_index  = sync_index < sync_period ? sync_index + 1 : 0;\r\n\n    if(fsync_reset == 1) {\n        sync_index = 0;\r\n\t\tbpz = 0.5;\r\n\t\tlpz = 0.5;\n    }\n    if(sync_render == index) {\n        sync_render = 0;\n    }\n    if(sync_index == 0) {\r\n\t\t//bpz = 0.5;\r\n\t\t//lpz = 0.5;\n        sync_render = index == 0 ? size : index - 1;\n    }\n}\n\nsample = 0.5;\n\nif(fsync_enable == 0 || sync_render != index) {\n\n    index = index < size ? index + 1 : 0 ; \n    phase = index / size;\n    if(index == 0) {\r\n\t\tcurrent_shape = shape;\r\n\t}\n    // Shape ... No switch case support, sadness.\n    if(current_shape == 0) {\n        sample = (phase * (1 + mult))%1 >= 0.125 ? 0.9999 : 0;\n    } else if (current_shape == 1) {\n        sample = (phase * (1 + mult))%1 >= 0.25 ? 0.9999 : 0;\n    } else if (current_shape == 2) {\n        sample = (phase * (1 + mult))%1 >= 0.5 ? 0.9999 : 0;\n    } else if (current_shape == 3) {\n        sample = (phase * (1 + mult))%1 >= 0.75 ? 0.9999 : 0;\n    } else if (current_shape == 4) {\n        sample = 1 - abs((phase * (1.0001+mult) % 1) - 0.5) * 2;\n    } else if (current_shape == 5) {\n        sample = abs(phase * 2) * (0.5+mult) % 1;\n    } else if (current_shape == 6) {\n        sample = (sin(phase * TWOPI * (1 + mult ) )) / 2.0001 + 0.5;\n    }\n\n    // Flip\n    sample = phase >= flip ? sample : 1 - sample;\n\n    // Noise\r\n\tif(noi != 0) {\n         sample = ((1 - noi) * sample) + (((noise() + 1) / 2) * noi);\r\n    }\n\n    // Normalize from 0. 1. to -0.5 0.5 and mult by Amp parameter\n    sample = (sample - 0.5) * amp;\n\n    // Filter - cheap and shity. ;)\n    scutoff = cutoff > 1 ? 1 : cutoff < 0 ? 0 : cutoff;\r\n\r\n\t// Clip and flip Res\n    sres = res > 1 ? 0 : res < 0 ? 1 : 1 - res;\r\n\r\n\t// Turn off filter if cutoff is 1 and we are on LP\n    filter = filter == 1 && scutoff == 1 && sres == 1 ? 0 : filter;\r\n\r\n\t// Turn off filter if cutoff is 0 and we are on HP\n    filter = filter == 2 && scutoff == 0 && sres == 1 ? 0 : filter;\r\n\n\t// Do some feedback\n    hp = sample - ((bpz * sres) + lpz);\n    bpz = ((hp * scutoff) + bpz);\n    lpz = ((bpz * scutoff) + lpz);\r\n\t// Run it again just because\n    hp = sample - ((bpz * sres) + lpz);\n    bpz = ((hp * scutoff) + bpz);\n    lpz = ((bpz * scutoff) + lpz);\r\n\t// Clip and saturate\n    bpz = bpz > 32 ? 32 : bpz < -32 ? -32 : bpz;\n    lpz = lpz > 32 ? 32 : lpz < -32 ? -32 : lpz;\n    bpz = bpz * (1 - (abs(bpz) * 0.015625));\n    lpz = lpz * (1 - (abs(lpz) * 0.015625));\r\n\n\t// Apply filter to sample\n    sample = filter == 1 ? lpz : filter == 2 ? hp : filter == 3 ? bpz : sample;\n    // End Filter\n\n    // Normalize from -0.5 0.5 to 0. 1.\n    sample = sample + 0.5;\n\n    // Clip & Wrap\n    sample = wrap == 0 ? clamp(sample, 0, 1) : clamp(((sample * .9999) + 1000) % 1, 0, 1) * 1.0001;\n\n    // Apply Resolution\n    sbits = pow(int(2), int(bits));\n    sample = (float(int(sample * sbits)) / sbits) + (1 / sbits);\r\n\t\n    poke(wavetable, sample, index, 0, 0, overdubmode=\"mix\", boundmode=\"ignore\", index=\"samples\", channelmode=\"ignore\");\n}\n\nout1 = sample;\nout2 = index;\n",
+									"code" : "/*\n ____                                          ____                     \n|    ~.    |        | `````|````` `````|````` |            |`````````,  \n-----------------------------------------------------------------------\n|       ~. |        |      |           |      |            |    `.      \n|_______.' |_______ |      |           |      |___________ |      `.    \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t..'''' ``..     ..'' |..          | `````|````` |         | \n-----------------------------------------------------------------------\n\t  ..'                |       |      ``..  |      |      |         | \n....''                   |       |          ``|      |      |         |\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n   _/                                    _/          _/_/      _/    \n_/_/_/_/  _/  _/_/    _/_/_/    _/_/_/  _/_/_/    _/    _/  _/  _/   \n _/      _/_/      _/    _/  _/_/      _/    _/    _/_/    _/  _/    \n_/      _/        _/    _/      _/_/  _/    _/  _/    _/  _/  _/     \n _/_/  _/          _/_/_/  _/_/_/    _/    _/    _/_/      _/       \n\n\nWaveform Generator\n\nCC - Timothy Lamb - trash80.com\n\n*/\nBuffer wavetable(\"---wavram\");\nBuffer userwave(\"---userwave\");\n\nHistory index(0);\nHistory sync_index(0);\nHistory sync_render(0);\n\nHistory current_shape(0);\nHistory bpz(0.0001);\nHistory lpz(0.0001);\n\nsize  = in1;\nbits  = in2;\nshape = in3;\nmult  = in4;\nwrap  = in5;\namp   = in6;\nflip  = in7;\nnoi   = in8;\nfilter = in9;\ncutoff = in10;\nres   = in11;\n\nfsync_enable = in12;\nfsync_rate   = in13;\nfsync_reset  = in14;\n\n\n// Framesync Oscillator\nif(fsync_enable != 0) { \n\tsync_period = fsync_rate * (SAMPLERATE / 1000);\n\tsync_phase  = sync_index / sync_period;\n\tsync_index  = sync_index < sync_period ? sync_index + 1 : 0;\n\n\tif(fsync_reset == 1) {\n\t\tsync_index = 0;\n\t\tbpz = 0.5;\n\t\tlpz = 0.5;\n\t}\n\tif(sync_render == index) {\n\t\tsync_render = 0;\n\t}\n\tif(sync_index == 0) {\n\t\t//bpz = 0.5;\n\t\t//lpz = 0.5;\n\t\tsync_render = index == 0 ? size : index - 1;\n\t}\n}\n\nsample = 0.5;\n\nif(fsync_enable == 0 || sync_render != index) {\n\n\tindex = index < size ? index + 1 : 0 ; \n\tphase = index / size;\n\tif(index == 0) {\n\t\tcurrent_shape = shape;\n\t}\n\t// Shape ... No switch case support, sadness.\n\n\tif(current_shape < 1) {\n\t\tsample = (phase * (1 + mult))%1 >= 0.125 ? 0.9999 : 0;\n\t} else if (current_shape < 2) {\n\t\tsample = (phase * (1 + mult))%1 >= 0.25 ? 0.9999 : 0;\n\t} else if (current_shape < 3) {\n\t\tsample = (phase * (1 + mult))%1 >= 0.5 ? 0.9999 : 0;\n\t} else if (current_shape < 4) {\n\t\tsample = (phase * (1 + mult))%1 >= 0.75 ? 0.9999 : 0;\n\t} else if (current_shape < 5) {\n\t\tsample = 1 - abs((phase * (1.0001+mult) % 1) - 0.5) * 2;\n\t} else if (current_shape < 6) {\n\t\tsample = abs(phase * 2) * (0.5+mult) % 1;\n\t} else if (current_shape < 7) {\n\t\tsample = (sin(phase * TWOPI * (1 + mult ) )) / 2.0001 + 0.5;\n\t} else if (current_shape < 8) {\n\t\tsample = peek(userwave,index);\n\t}\n\n\n\t// Flip\n\tsample = phase >= flip ? sample : 1 - sample;\n\n\t// Noise\n\tif(noi != 0) {\n\t\t sample = ((1 - noi) * sample) + (((noise() + 1) / 2) * noi);\n\t}\n\n\t// Normalize from 0. 1. to -0.5 0.5 and mult by Amp parameter\n\tsample = (sample - 0.5) * amp;\n\n\t// Filter - cheap and shity. ;)\n\tscutoff = cutoff > 1 ? 1 : cutoff < 0 ? 0 : cutoff;\n\n\t// Clip and flip Res\n\tsres = res > 1 ? 0 : res < 0 ? 1 : 1 - res;\n\n\t// Turn off filter if cutoff is 1 and we are on LP\n\tfilter = filter == 1 && scutoff == 1 && sres == 1 ? 0 : filter;\n\n\t// Turn off filter if cutoff is 0 and we are on HP\n\tfilter = filter == 2 && scutoff == 0 && sres == 1 ? 0 : filter;\n\n\t// Do some feedback\n\thp = sample - ((bpz * sres) + lpz);\n\tbpz = ((hp * scutoff) + bpz);\n\tlpz = ((bpz * scutoff) + lpz);\n\t// Run it again just because\n\thp = sample - ((bpz * sres) + lpz);\n\tbpz = ((hp * scutoff) + bpz);\n\tlpz = ((bpz * scutoff) + lpz);\n\t// Clip and saturate\n\tbpz = bpz > 32 ? 32 : bpz < -32 ? -32 : bpz;\n\tlpz = lpz > 32 ? 32 : lpz < -32 ? -32 : lpz;\n\tbpz = bpz * (1 - (abs(bpz) * 0.015625));\n\tlpz = lpz * (1 - (abs(lpz) * 0.015625));\n\n\t// Apply filter to sample\n\tsample = filter == 1 ? lpz : filter == 2 ? hp : filter == 3 ? bpz : sample;\n\t// End Filter\n\n\t// Normalize from -0.5 0.5 to 0. 1.\n\tsample = sample + 0.5;\n\n\t// Clip & Wrap\n\tsample = wrap == 0 ? clamp(sample, 0, 1) : clamp(((sample * .9999) + 1000) % 1, 0, 1) * 1.0001;\n\n\t// Apply Resolution\n\tsbits = pow(int(2), int(bits));\n\tsample = (float(int(sample * sbits)) / sbits) + (1 / sbits);\n\t\n\tpoke(wavetable, sample, index, 0, 0, overdubmode=\"mix\", boundmode=\"ignore\", index=\"samples\", channelmode=\"ignore\");\n}\n\nout1 = sample;\nout2 = index;\n",
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-3",
@@ -1950,7 +2142,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 722.833313, 186.564209, 101.708435, 15.0 ],
+					"patching_rect" : [ 720.833313, 203.564209, 101.708435, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 1.5, 181.0, 15.0 ],
 					"prototypename" : "M4L.live.menu.notevalues.Live",
@@ -1980,12 +2172,13 @@
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "display.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.474365, 384.871582, 269.0, 133.0 ],
+					"patching_rect" : [ 285.474365, 380.121582, 269.0, 133.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 16.0, 262.0, 129.5 ]
+					"presentation_rect" : [ 7.0, 16.0, 262.0, 129.5 ],
+					"varname" : "display"
 				}
 
 			}
@@ -2007,7 +2200,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 488.0, 70.0, 313.0, 457.0 ],
+						"rect" : [ 776.0, 91.0, 313.0, 431.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2035,8 +2228,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.0, 203.0, 79.0, 16.0 ],
-									"text" : "outputlast 128"
+									"patching_rect" : [ 131.0, 203.0, 78.0, 16.0 ],
+									"text" : "outputlast 256"
 								}
 
 							}
@@ -2088,8 +2281,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 329.0, 167.0, 18.0 ],
-									"text" : "jit.spill @listlength 128 @plane 0"
+									"patching_rect" : [ 50.0, 329.0, 166.0, 18.0 ],
+									"text" : "jit.spill @listlength 256 @plane 0"
 								}
 
 							}
@@ -2144,8 +2337,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 172.0, 59.0, 18.0 ],
-									"text" : "qmetro 33"
+									"patching_rect" : [ 50.0, 172.0, 58.0, 18.0 ],
+									"text" : "qmetro 16"
 								}
 
 							}
@@ -2184,8 +2377,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-									"patching_rect" : [ 50.0, 228.0, 123.0, 18.0 ],
-									"text" : "jit.buffer~ ---wavram 4 1"
+									"patching_rect" : [ 50.0, 228.0, 129.0, 18.0 ],
+									"text" : "jit.buffer~ ---wavram 20 1"
 								}
 
 							}
@@ -2301,7 +2494,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 285.474365, 363.121582, 55.0, 18.0 ],
+					"patching_rect" : [ 285.474365, 350.371582, 55.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -2640,7 +2833,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 738.125, 213.814209, 94.0, 18.0 ],
+					"patching_rect" : [ 736.125, 245.814209, 94.0, 18.0 ],
 					"text" : "Resampling Filter",
 					"textcolor" : [ 0.72549, 0.733333, 0.756863, 1.0 ]
 				}
@@ -2658,7 +2851,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 723.333313, 213.814209, 15.0, 15.0 ],
+					"patching_rect" : [ 721.333313, 245.814209, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -3619,7 +3812,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.490448, 39.75, 65.0, 18.0 ],
+					"patching_rect" : [ 293.578003, 38.75, 65.0, 18.0 ],
 					"text" : "s ---rawmidi"
 				}
 
@@ -4485,8 +4678,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 170.0, 46.0, 18.0 ],
-									"text" : "clip 1 8"
+									"patching_rect" : [ 50.0, 170.0, 50.0, 18.0 ],
+									"text" : "clip 1 12"
 								}
 
 							}
@@ -4697,7 +4890,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 170.0, 56.0, 18.0 ],
-									"text" : "clip 2 128"
+									"text" : "clip 2 256"
 								}
 
 							}
@@ -5716,7 +5909,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "signal", "float" ],
 													"patching_rect" : [ 346.5, 434.0, 55.0, 18.0 ],
-													"sig" : 0.0
+													"sig" : -1.0
 												}
 
 											}
@@ -6490,7 +6683,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 90.228333, 27.75, 80.0, 18.0 ],
+					"patching_rect" : [ 182.363785, 42.75, 80.0, 18.0 ],
 					"text" : "s ---tempoBPM"
 				}
 
@@ -6741,27 +6934,13 @@
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 84.0, 91.0, 32.5, 18.0 ],
-									"text" : "* 6."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial Bold",
-									"fontsize" : 10.0,
 									"id" : "obj-4",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 84.0, 65.0, 36.0, 18.0 ],
-									"text" : "/ 127."
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 84.0, 65.0, 71.0, 18.0 ],
+									"text" : "expr $I1 >> 4"
 								}
 
 							}
@@ -6788,8 +6967,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 169.0, 49.0, 18.0 ],
-									"text" : "clip 0 6"
+									"patching_rect" : [ 50.0, 169.0, 46.0, 18.0 ],
+									"text" : "clip 0 7"
 								}
 
 							}
@@ -6888,19 +7067,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-57", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-5", 0 ]
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -7363,7 +7533,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"rect" : [ 783.0, 154.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -7386,12 +7556,26 @@
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 161.0, 131.0, 18.0 ],
+									"text" : "expr 127*pow(($f1)/127\\,2)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 171.0, 92.0, 18.0 ],
+									"patching_rect" : [ 50.0, 186.0, 92.0, 18.0 ],
 									"text" : "zmap 0. 127. 0. 1."
 								}
 
@@ -7464,6 +7648,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-57", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -7482,7 +7675,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-56", 0 ]
@@ -8320,7 +8513,7 @@
 							"parameter_shortname" : "Waveform Size",
 							"parameter_type" : 1,
 							"parameter_mmin" : 2.0,
-							"parameter_mmax" : 128.0,
+							"parameter_mmax" : 256.0,
 							"parameter_modmode" : 4,
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 32 ],
@@ -8379,7 +8572,7 @@
 							"parameter_shortname" : "Bit Depth",
 							"parameter_type" : 1,
 							"parameter_mmin" : 1.0,
-							"parameter_mmax" : 8.0,
+							"parameter_mmax" : 12.0,
 							"parameter_modmode" : 4,
 							"parameter_modmax" : 11.0,
 							"parameter_initial_enable" : 1,
@@ -9008,7 +9201,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 90.228333, 7.25, 90.0, 18.0 ],
+					"patching_rect" : [ 182.363785, 22.25, 90.0, 18.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial Bold",
@@ -9701,7 +9894,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 309.578003, 187.064209, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 142.0, 78.0, 22.0 ],
+					"presentation_rect" : [ 365.0, 143.955902, 78.0, 19.68137 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Filter Type",
@@ -9823,7 +10016,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 200.363785, 176.064209, 41.285706, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 317.0, 143.25, 44.0, 20.0 ],
+					"presentation_rect" : [ 317.0, 144.887268, 44.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Clip / Wrap",
@@ -9928,7 +10121,7 @@
 				"box" : 				{
 					"activedialcolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
 					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.4 ],
-					"annotation" : "Welcome to the infamous Cutoff Knob. Set the cutoff amount applied to the shape filter.",
+					"annotation" : "Set the cutoff amount applied to the shape filter.",
 					"bordercolor" : [ 1.0, 1.0, 1.0, 0.2 ],
 					"focusbordercolor" : [ 1.0, 1.0, 1.0, 0.2 ],
 					"id" : "obj-44",
@@ -9987,7 +10180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 6.490448, 23.25, 39.0, 18.0 ],
+					"patching_rect" : [ 293.578003, 22.25, 39.0, 18.0 ],
 					"text" : "midiin"
 				}
 
@@ -10243,6 +10436,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-96", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -10274,6 +10494,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -10351,6 +10580,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-48", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -10378,6 +10616,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-79", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -10390,7 +10637,7 @@
 					"destination" : [ "obj-149", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 2 ]
+					"source" : [ "obj-6", 3 ]
 				}
 
 			}
@@ -10399,7 +10646,7 @@
 					"destination" : [ "obj-149", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 1 ]
+					"source" : [ "obj-6", 2 ]
 				}
 
 			}

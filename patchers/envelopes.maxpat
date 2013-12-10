@@ -32,6 +32,18 @@
 				"box" : 				{
 					"comment" : "",
 					"hint" : "Volume Envelope",
+					"id" : "obj-9",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 303.0, 320.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"hint" : "Volume Envelope",
 					"id" : "obj-18",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -1418,6 +1430,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
