@@ -7,6 +7,10 @@ Note: If you want to try it out, all you need is the BlitterSynthLivePack.alp fi
 
 Changelog
 =================
+9/12/2013
+ - Added user drawn waves back in.
+ - Changed bgcolor to be relative to Ableton skin. 
+ - Upped bit depth to 12 and sample size to 256.
 
 1/12/2013
  - Fixed feedback loop on matrix.
